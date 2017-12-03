@@ -9,7 +9,8 @@
   "devDependencies": {
     "babel-jest": "^21.2.0",
     "babel-preset-env": "^1.6.1",
-    "jest": "21.2.1"
+    "jest": "21.2.1",
+    "path": "0.12.7"
   },
   "repository": {
     "type": "git",
