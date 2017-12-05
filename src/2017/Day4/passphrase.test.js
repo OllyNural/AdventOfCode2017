@@ -1,5 +1,6 @@
 import passphrase from './passphrase'
-import readFileArray from '../../util/readFile'
+import util from '../../util/readFile'
+const readFileArrayString = util.readFileArrayString
 
 describe('Part 1 - Should return the correct result for given inputs', () => {
     it('Should give the correct result for test input 1', () => {
@@ -17,7 +18,7 @@ describe('Part 1 - Should return the correct result for given inputs', () => {
         expect(passphrase(input)).toBe(1)
     })
     it('Should give the correct result for my input', () => {
-        const input = readFileArray('../2017/Day4/input.txt')
+        const input = readFileArrayString('../2017/Day4/input.txt')
         expect(passphrase(input)).toBe(477)
     })
 })
@@ -49,7 +50,7 @@ describe('Part 2 - Should return the correct result for given inputs', () => {
     })
 
     it('Should give the correct result for my input', () => {
-        const input = readFileArray('../2017/Day4/input.txt')
-        expect(passphrase(input, true)).toBe(326)
+        const input = readFileArrayString('../2017/Day4/input.txt')
+        expect(passphrase(input, true)).toBe(167)
     })
 })
