@@ -1,4 +1,5 @@
 function rowDivisible(row) {
+    // Could/Should be done with reduce, but couldn't figure out how to get it working with accumulator
     let foundVal
     row.forEach((num, index) => {
         for (let i = 0; i < row.length; i++) {
