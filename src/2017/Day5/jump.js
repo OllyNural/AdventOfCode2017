@@ -1,5 +1,5 @@
 let jump = function(input, expanded = false) {
-    input = input.map(a => a = parseInt(a))
+    input = input.map(a => parseInt(a))
     let i = 0
     let oldI
     let steps = 0

@@ -7,17 +7,12 @@
 // Going round the square to find the co-ords of our number
 // And then just find manhatten distance
 function spiralMemory(input) {
-    // Count up each odd number squaring it, until we find one greater than our given number
-    console.log(input)
-    let lowSq
-    let highSq
-    for (let i = 1; i < 1000; i += 2) {
-        if (Math.pow(i, 2) > input) {
-            lowSq = i - 2
-            highSq = i
-            break
-        }
-    }
+    let sqroot = Math.sqrt(input)
+    let lowSq = Math.floor(sqroot)
+    let highSq = Math.ceil(sqroot)
+
+    
+
     let numOfRings = Math.ceil(lowSq / 2)
     let diffOfNums = input - Math.pow(lowSq, 2)
     let numOfSidesRoundSquare = Math.floor(diffOfNums / lowSq)

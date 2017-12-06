@@ -17,17 +17,3 @@ let sumAnagram = function(row) {
 }
 
 export default passphrase
-
-// FAR more efficient but slightly ugly
-
-        // row = row.split(' ')
-        // let holdingArray = []
-        // let hasFound
-        // row.forEach(phrase => {
-        //     if (!holdingArray.includes(phrase)) {
-        //         holdingArray.push(phrase)
-        //     } else {
-        //         hasFound = true
-        //     }
-        // })
-        // if (!hasFound) sum++
